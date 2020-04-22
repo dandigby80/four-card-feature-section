@@ -1,0 +1,205 @@
+:root{
+  /* Primary Colors */
+
+ --Red: hsl(0, 78%, 62%);
+ --Cyan: hsl(180, 62%, 55%);
+ --Orange: hsl(34, 97%, 64%);
+ --Blue: hsl(212, 86%, 64%);
+
+ /* Neutral Colors */
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+body{
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #555;
+  background: var(--Very-Light-Gray)
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  /* justify-content: center; */
+}
+
+.main-header{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 77px 77px 46px;;
+}
+
+.main-header span{
+  font-weight: 200;
+  letter-spacing: 0.7px;
+  margin-right: 3px;
+  margin-top: 4px;
+}
+
+.main-header h1{
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  margin-left: 10px;
+}
+
+.main-header p{
+  margin-top: 5px;
+  font-size: 16px;
+  padding: 10px;
+  color: var(--Grayish-Blue);
+  
+}
+
+.box-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom:100px;
+}
+
+.left-box .sup-card{
+  margin-left: 164px;
+  margin-top: 143px;
+}
+
+.center-box .team-card{
+  margin-right: 4px;
+  margin-top: 3px;
+  margin-bottom: 31px;
+  margin-left: 2px;
+}
+
+.right-box .calc-card{
+ margin-top: 143px;
+ margin-right: 74px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  /* height: 100%; */
+  border-radius: 7px;
+  background: #fff;;
+  box-shadow: -3px 10px 15px 0px hsla(212, 86%, 64%, 25%);
+  /* margin: 20px; */
+}
+
+.card .card-image{
+  display: flex;
+  /* justify-content: flex-end; */
+}
+
+.card-header h2{
+  font-weight: bold;
+  font-size: 20px;
+  padding: 26px 34px 0;
+  color: #555;
+}
+
+.card-header p{
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 13.1px;
+  color: var(--Grayish-Blue);
+  padding: 10px 0 0 35px;
+}
+
+.card-image{
+  padding: 38px 38px 33px 38px;
+}
+
+.sup-card{
+  border-top: 4px var(--Cyan) solid;
+}
+
+.team-card{
+  border-top: 3px var(--Red) solid;
+}
+
+.karma-card{
+  border-top: 3px var(--Orange) solid;
+}
+
+.calc-card{
+  border-top: 3px var(--Blue) solid;
+}
+
+img{
+  padding-top: 1px;
+  padding-left: 217px;
+}
+
+.main-header{
+  margin-left: 83px;
+  margin-bottom: 6px;
+}
+
+@media(max-width: 500px){
+  .main-container{
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .box-container{
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .center-box{
+    flex-direction: column;
+  }
+
+  .left-box,.center-box,.right-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 60px;
+  }
+
+  .left-box .sup-card,
+  .right-box .calc-card,
+  .center-box .team-card,
+  .center-box .karma-card{
+    padding: 0;
+    margin: 0;
+  }
+
+  .center-box .team-card{
+    margin-bottom: 60px;
+  }
+
+  .main-header{
+    padding: 0;
+    margin: 85px 0 0;
+  }
+
+  .main-header h1{
+    font-size: 24px;
+
+  }
+
+  .main-header p{
+    padding: 0 60px;
+    text-align: center;
+  }
+}
+
+
+
